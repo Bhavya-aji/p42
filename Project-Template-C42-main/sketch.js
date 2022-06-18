@@ -70,21 +70,10 @@ function draw() {
       handleGameover(redBubbleGroup);
     }
     
-    /*if(blueBubbleGroup.(bulletGroup)){
-      handleBubbleCollision(blueBubbleGroup);
-    }*/
-
+    
     if(blueBubbleGroup.collide(bulletGroup)){
-      handleBubbleCollision();
+      handleBubbleCollision(blueBubbleGroup);
     }
-    
-    /*if(blueBubbleGroup.collide()){
-      handleBubbleCollision(blueBubbleGroup);
-    }*/
-    
-    /*if(blueBubbleGroup.collide(bulletGroup)){
-      handleBubbleCollision(blueBubbleGroup);
-    }*/
 
     if(redBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(redBubbleGroup);
